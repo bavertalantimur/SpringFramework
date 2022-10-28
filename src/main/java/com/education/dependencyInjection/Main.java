@@ -7,8 +7,10 @@ public class Main {
         ClassPathXmlApplicationContext context=new ClassPathXmlApplicationContext("applicationContext.xml");
 
         CustomerManager manager=new CustomerManager(context.getBean("database",ICustomerDal.class));
+        ICustomerService customerService=context.getBean("service",ICustomerService.class);
+        customerService.add();
 
-        manager.add();
+        //manager.add();
         /*
         CustomerManager manager=new CustomerManager(new CustomerDal());
         CustomerManager smanager=new CustomerManager(new MysqlCustomerDal());

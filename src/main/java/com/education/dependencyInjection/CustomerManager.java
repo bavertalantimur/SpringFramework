@@ -1,6 +1,6 @@
 package com.education.dependencyInjection;
 
-public class CustomerManager {
+public class CustomerManager implements ICustomerService {
     private ICustomerDal customerDal;
     int a;
     public CustomerManager(ICustomerDal customerDal) {
