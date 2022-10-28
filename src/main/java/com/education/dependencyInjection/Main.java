@@ -15,7 +15,7 @@ public class Main {
         CustomerManager manager=new CustomerManager(new CustomerDal());
         CustomerManager smanager=new CustomerManager(new MysqlCustomerDal());
         CustomerManager manager2=new CustomerManager(new MysqlCustomerDal());
-         manager.add();
+        manager.add();
         smanager.add();
 
         manager2.add();*/
