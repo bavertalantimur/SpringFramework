@@ -12,6 +12,11 @@
 
     </bean>
 
+    <bean id="service" class="com.education.dependencyInjection.CustomerManager">
+        <constructor-arg ref="database"></constructor-arg>
+
+    </bean>
+
 
 
 
