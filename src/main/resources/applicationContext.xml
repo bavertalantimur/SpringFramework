@@ -9,11 +9,13 @@
 	   		http://www.springframework.org/schema/context/spring-context-3.1.xsd">
 
     <bean id="database" class="com.education.dependencyInjection.MysqlCustomerDal">
+        <property name="connectionString" value="--Mysql String"></property>
 
     </bean>
 
     <bean id="service" class="com.education.dependencyInjection.CustomerManager">
         <constructor-arg ref="database"></constructor-arg>
+      <!--  <property name="customerDal" ref="database"></property> -->
 
     </bean>
 
