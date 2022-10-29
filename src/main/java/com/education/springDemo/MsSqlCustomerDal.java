@@ -4,7 +4,7 @@ package com.education.springDemo;
 import org.springframework.stereotype.Component;
 // compponent (database) tek yerde çalışır Mysql vermiş olursak main de çalıştırıken hata veririd
 
-@Component("database")
+//@Component("database")
 public class MsSqlCustomerDal  implements  ICustomerDal{
     String connectionString;
     public String getConnectionString() {

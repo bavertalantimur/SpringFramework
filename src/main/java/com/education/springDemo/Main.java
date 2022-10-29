@@ -16,7 +16,10 @@ public class Main {
         AnnotationConfigApplicationContext context=new AnnotationConfigApplicationContext(IocConfig.class);
 
         ICustomerDal customerDal=context.getBean("database", ICustomerDal.class);
+
         customerDal.add();
+
+
 
 
     }
