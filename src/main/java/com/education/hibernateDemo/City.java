@@ -10,13 +10,13 @@ import javax.persistence.Table;
 
 public class City {
     @Id
-    @Column(name = "ID")
+    @Column(name = "id")
     private int id;
 
     @Column(name = "name")
     private String name;
 
-    @Column(name = "countryCode")
+    @Column(name = "country_code")
     private String countryCode;
 
     @Column(name = "district")
